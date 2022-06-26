@@ -1,4 +1,4 @@
-Rem:Simple netcat reverse shell that downloads the binary and executes it. Blocked by AV.
+Rem:Simple netcat reverse shell that downloads the binary and executes it. Blocked by AV. Tested on Windows 10
 Press:131+114
 CustomDelay:2000
 Rem:Needs a lot of whitespaces to avoid running any other cached Run command starting with powershell.exe
